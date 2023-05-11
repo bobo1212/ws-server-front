@@ -1,0 +1,17 @@
+https://symfony.com/doc/current/frontend/encore/simple-example.html
+
+
+yarn watch
+npm run watch
+
+
+yarn dev-server
+npm run dev-server
+
+
+
+
+npm run dev
+npm run build
+
+npm install jquery --save-dev
