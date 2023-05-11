@@ -4,9 +4,11 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=7.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "bobo1212/shared-memory": "dev-develop",
+        "bobo1212/ws-server": "dev-develop",
         "doctrine/annotations": "^2.0",
         "doctrine/doctrine-bundle": "^2.9",
         "doctrine/doctrine-migrations-bundle": "^3.2",
@@ -101,5 +103,11 @@
         "symfony/phpunit-bridge": "^6.2",
         "symfony/stopwatch": "5.4.*",
         "symfony/web-profiler-bundle": "5.4.*"
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bobo1212/ws-server.git"
+        }
+    ]
 }

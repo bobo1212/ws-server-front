@@ -4,8 +4,103 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f600cd82a19e2fc1128b7eb13b68498",
+    "content-hash": "29763b06f9542e518ab83a24e72fceb8",
     "packages": [
+        {
+            "name": "bobo1212/shared-memory",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobo1212/shared-memory.git",
+                "reference": "a56abf27bb82688e18f9239301d8b16629389d38"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobo1212/shared-memory/zipball/a56abf27bb82688e18f9239301d8b16629389d38",
+                "reference": "a56abf27bb82688e18f9239301d8b16629389d38",
+                "shasum": ""
+            },
+            "require": {
+                "ext-sysvsem": "*",
+                "ext-sysvshm": "*"
+            },
+            "default-branch": true,
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Bobo1212\\SharedMemory\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "bobo1212",
+                    "email": "bobo1212@wp.pl"
+                }
+            ],
+            "description": "SharedMemory",
+            "support": {
+                "issues": "https://github.com/bobo1212/shared-memory/issues",
+                "source": "https://github.com/bobo1212/shared-memory/tree/develop"
+            },
+            "time": "2023-03-22T07:55:07+00:00"
+        },
+        {
+            "name": "bobo1212/ws-server",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobo1212/ws-server.git",
+                "reference": "3ace2ffafd18bbe4d3b73faaefe603b0003ef496"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobo1212/ws-server/zipball/3ace2ffafd18bbe4d3b73faaefe603b0003ef496",
+                "reference": "3ace2ffafd18bbe4d3b73faaefe603b0003ef496",
+                "shasum": ""
+            },
+            "require": {
+                "bobo1212/shared-memory": "dev-develop",
+                "ext-json": "*",
+                "ext-posix": "*",
+                "ext-shmop": "*",
+                "ext-sockets": "*",
+                "ext-sysvsem": "*",
+                "ext-sysvshm": "*",
+                "php": ">=7.4",
+                "textalk/websocket": "^1.6"
+            },
+            "require-dev": {
+                "openswoole/ide-helper": "~22.0.1"
+            },
+            "bin": [
+                "bin/ws"
+            ],
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Bobo1212\\WsServerOpenSwoole\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "bobo1212",
+                    "email": "bobo1212@wp.pl"
+                }
+            ],
+            "description": "Websocket server",
+            "support": {
+                "source": "https://github.com/bobo1212/ws-server/tree/develop",
+                "issues": "https://github.com/bobo1212/ws-server/issues"
+            },
+            "time": "2023-05-09T10:50:53+00:00"
+        },
         {
             "name": "doctrine/annotations",
             "version": "2.0.1",
@@ -1907,6 +2002,112 @@
             "time": "2023-05-02T09:19:37+00:00"
         },
         {
+            "name": "phrity/net-uri",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sirn-se/phrity-net-uri.git",
+                "reference": "c6ecf127e7c99a41ce04d3cdcda7f51108dd96f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sirn-se/phrity-net-uri/zipball/c6ecf127e7c99a41ce04d3cdcda7f51108dd96f7",
+                "reference": "c6ecf127e7c99a41ce04d3cdcda7f51108dd96f7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.0",
+                "phpunit/phpunit": "^9.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sören Jensen",
+                    "email": "sirn@sirn.se",
+                    "homepage": "https://phrity.sirn.se"
+                }
+            ],
+            "description": "PSR-7 Uri and PSR-17 UriFactory implementation",
+            "homepage": "https://phrity.sirn.se/net-uri",
+            "keywords": [
+                "psr-17",
+                "psr-7",
+                "uri",
+                "uri factory"
+            ],
+            "support": {
+                "issues": "https://github.com/sirn-se/phrity-net-uri/issues",
+                "source": "https://github.com/sirn-se/phrity-net-uri/tree/1.2.0"
+            },
+            "time": "2022-11-30T07:20:06+00:00"
+        },
+        {
+            "name": "phrity/util-errorhandler",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sirn-se/phrity-util-errorhandler.git",
+                "reference": "dc9ac8fb70d733c48a9d9d1eb50f7022172da6bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sirn-se/phrity-util-errorhandler/zipball/dc9ac8fb70d733c48a9d9d1eb50f7022172da6bc",
+                "reference": "dc9ac8fb70d733c48a9d9d1eb50f7022172da6bc",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.0",
+                "phpunit/phpunit": "^8.0|^9.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sören Jensen",
+                    "email": "sirn@sirn.se",
+                    "homepage": "https://phrity.sirn.se"
+                }
+            ],
+            "description": "Inline error handler; catch and resolve errors for code block.",
+            "homepage": "https://phrity.sirn.se/util-errorhandler",
+            "keywords": [
+                "error",
+                "warning"
+            ],
+            "support": {
+                "issues": "https://github.com/sirn-se/phrity-util-errorhandler/issues",
+                "source": "https://github.com/sirn-se/phrity-util-errorhandler/tree/1.0.1"
+            },
+            "time": "2022-10-27T12:14:42+00:00"
+        },
+        {
             "name": "psr/cache",
             "version": "1.0.1",
             "source": {
@@ -2052,6 +2253,114 @@
                 "source": "https://github.com/php-fig/event-dispatcher/tree/1.0.0"
             },
             "time": "2019-01-08T18:20:26+00:00"
+        },
+        {
+            "name": "psr/http-factory",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "e616d01114759c4c489f93b099585439f795fe35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/e616d01114759c4c489f93b099585439f795fe35",
+                "reference": "e616d01114759c4c489f93b099585439f795fe35",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory/tree/1.0.2"
+            },
+            "time": "2023-04-10T20:10:41+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
+            },
+            "time": "2023-04-04T09:50:52+00:00"
         },
         {
             "name": "psr/link",
@@ -7697,6 +8006,57 @@
             "time": "2023-04-23T19:33:36+00:00"
         },
         {
+            "name": "textalk/websocket",
+            "version": "1.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Textalk/websocket-php.git",
+                "reference": "67de79745b1a357caf812bfc44e0abf481cee012"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Textalk/websocket-php/zipball/67de79745b1a357caf812bfc44e0abf481cee012",
+                "reference": "67de79745b1a357caf812bfc44e0abf481cee012",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 | ^8.0",
+                "phrity/net-uri": "^1.0",
+                "phrity/util-errorhandler": "^1.0",
+                "psr/http-message": "^1.0",
+                "psr/log": "^1.0 | ^2.0 | ^3.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.0",
+                "phpunit/phpunit": "^9.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebSocket\\": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Fredrik Liljegren"
+                },
+                {
+                    "name": "Sören Jensen"
+                }
+            ],
+            "description": "WebSocket client and server",
+            "support": {
+                "issues": "https://github.com/Textalk/websocket-php/issues",
+                "source": "https://github.com/Textalk/websocket-php/tree/1.6.3"
+            },
+            "time": "2022-11-07T18:59:33+00:00"
+        },
+        {
             "name": "twig/extra-bundle",
             "version": "v3.6.0",
             "source": {
@@ -10111,7 +10471,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "bobo1212/shared-memory": 20,
+        "bobo1212/ws-server": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
